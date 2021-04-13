@@ -7,26 +7,26 @@ service_description:
 cse:
   service:
     registry:
-      address: https://cse.cidc-rp-12.joint.cmecloud.cn
+      address: https://cse.cn-snxy1.ctyun.cn
       #address: https://10.10.10.10:30100
       instance:
         watch: false
   config:
     client:
-      serverUri: https://cse.cidc-rp-12.joint.cmecloud.cn
+      serverUri: https://cse.cn-snxy1.ctyun.cn
       #serverUri: https://10.10.10.10:30103
       refreshMode: 1
       refresh_interval: 5000
   monitor:
     client:
       enable: true
-      serverUri: https://cse.cidc-rp-12.joint.cmecloud.cn
+      serverUri: https://cse.cn-snxy1.ctyun.cn
       #serverUri: https://10.10.10.10:30109
   rest:
     address: 0.0.0.0:8080
   #When a local project is deployed as a container outside a cluster, you need to delete all monitor and credentials comments and configure the AK/SK.
-  #credentials:
-    #accessKey: ak
-    #secretKey: sk
+  credentials:
+    accessKey: FO0ETMVBHFW5LXQCVYSD
+    secretKey: 6opivx5DJODthVZZpn92twlz3lmnY1MY71v5qEs0
     #akskCustomCipher: default
-    #project: cn-east-3
+    project: cn-snxy1
